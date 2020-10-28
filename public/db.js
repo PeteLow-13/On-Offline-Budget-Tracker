@@ -24,16 +24,16 @@ const saveRecord = (record) => {
     //creating transaction on pending db w readwrite access
     const transaction = db.transaction(['pending'], 'readwrite');
     //access pending objectStore
-    const store = transaction.createObjectStore('pending');
+    const store = transaction.objectStore('pending');
     //add records from store
     store.add(record);
 };
 
-const checkdatabase = () => {
+function checkDatabase() {
     //open transaciton on pending db
     const transaction = db.transaction(['pending'], 'readwrite');
     //access pending object store
-    const store = transaction.createObjectStore('pending');
+    const store = transaction.objectStore('pending');
     //getAll records from store and set to variable
     const getAll = store.getAll();
 
@@ -50,7 +50,7 @@ const checkdatabase = () => {
                 //if successful open transaction with pending db
                 const transaction = db.transaction(['pending'], 'readwrite');
                 //accessing peding object store
-                const store = transaction.createObjectStore('pending');
+                const store = transaction.objectStore('pending');
                 //clear the store
                 store.clear();
             });
