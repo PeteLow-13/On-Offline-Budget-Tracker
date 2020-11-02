@@ -20,7 +20,7 @@ request.onerror = (event) => {
     console.log(error);
 };
 
-const saveRecord = (record) => {
+function saveRecord(record) {
     //creating transaction on pending db w readwrite access
     const transaction = db.transaction(['pending'], 'readwrite');
     //access pending objectStore
@@ -38,12 +38,13 @@ function checkDatabase() {
     const getAll = store.getAll();
 
     getAll.onsuccess = () => {
-        if (getAll.resultllength > 0) {
+        if (getAll.result.length > 0) {
+            var body = JSON.stringify(getAll.result);
             fetch('/api/transaction/bulk', {
                 method: 'POST',
-                boddy : JSON.stringify(getAll.result),
+                body : body,
                 headers: {
-                    Accept: 'application/json, text/plain, */*', 'Content_Type': 'application/json'
+                     'Content-Type': 'application/json'
                 }
             }).then(response => response.json())
             .then(()=> {
