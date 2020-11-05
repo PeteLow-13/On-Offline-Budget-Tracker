@@ -2,7 +2,8 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-green.svg)](https://opensource.org/licenses/ISC)
 ## Description
 
-A tool to help manage your budget weather or not you are connecteed to the internet. 
+A tool to help manage your budget weather or not you are connecteed to the internet.
+![](public/assets/budget1.png) 
 ## Table of Contents
 - [Usage](#usage)
 - [Installation](#installation)
@@ -26,8 +27,9 @@ License
 
 JavaScript, CSS, HTML, Express, Mongoose, Morgan, Bootstrap, lite-server, Compression
 ## Media
-
-Media
+![](public/assets/budget3.png)
+Transactions can be entered offline and will be handled by the service-worker, then pushed to the database upon reconnection
+![](public/assets/budget2.png)
 ## Deployed
 
 - https://fathomless-refuge-22333.herokuapp.com/
