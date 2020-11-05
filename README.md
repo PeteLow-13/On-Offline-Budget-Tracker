@@ -12,7 +12,7 @@ A tool to help manage your budget weather or not you are connecteed to the inter
 - [Deployed](#deployed)
 - [Questions](#questions)
 
-A tool to help manage your budget weather or not you are connecteed to the internet. 
+A tool to help manage your budget wether or not you are connecteed to the internet. 
 ## Usage
 
 Use it to help budget and track incoming and out going funds.
@@ -30,7 +30,7 @@ JavaScript, CSS, HTML, Express, Mongoose, Morgan, Bootstrap, lite-server, Compre
 Media
 ## Deployed
 
-- https://
+- https://fathomless-refuge-22333.herokuapp.com/
 ## Repository
 - https://github.com/PeteLow-13/On-Offline-Budget-Tracker
 ## Questions
